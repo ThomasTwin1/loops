@@ -1,0 +1,34 @@
+#  For Loops
+# The placeholder variable stores the value of the targeted variable containing the list
+# The loop on iterates one time per value within a list
+# Always use similar naming conventions when making a placeholder variable
+# For example:
+thomas_family = ["Rod", "Tiera", "Kai", "Kairo", "Kaila", "Kailee", "Kayo"]
+for member in thomas_family:
+    print(member.title() + " Thomas\n".title())
+# The placeholder variable member is a family member in the thomas_family variable
+# The placeholder variable should be a singular and the targeted variable plural. This makes the code easy to read.
+# More examples:
+# for fruit in fruits:, for shark in sharks:, for card in cards:
+# Don't forget to put the colon at the end of the for loop statement
+# The code inside the loop should be indented with 4 spaces
+# Lastly you can print a statement to regarding the for loop outside the loop
+thomas_family = ["Rod", "Tiera", "Kai", "Kairo", "Kaila", "Kailee", "Kayo"]
+for member in thomas_family:
+    print(member.title() + " Thomas\n".title())
+print(f"Hello {', '.join(thomas_family[:-1])} and {thomas_family[-1]}!")
+
+# Here is another example of the code:
+# Define the Thomas family list
+thomas_family = ["Rod", "Tiera", "Kai", "Kairo", "Kaila", "Kailee", "Kayo"]
+
+# Print each family member's name with "Thomas" appended
+for member in thomas_family:
+    print(f"{member.title()} Thomas\n")
+
+# Print a greeting statement for the entire family
+print(f"Hello {', '.join(thomas_family[:-1])} and {thomas_family[-1]}!")
+
+
+
+
