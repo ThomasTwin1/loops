@@ -1,0 +1,9 @@
+pizzas = ["pepperoni", "combination", "cheese"]
+for pizza in pizzas:
+    print(f"I like {pizza} pizza.")
+print("I really like pizza!")
+
+canines = ["wolf", "fox", "dog"]
+for canine in canines:
+    print(f"A {canine} would make a great pet.")
+print("Any of this animals would make great pets because they are canines.\nCanines are man's best friend.")
