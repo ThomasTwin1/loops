@@ -1,0 +1,31 @@
+# Range Function for Loops
+# The range function generates numbers in a given range using the off-by-one concept
+for value in range(1,5):
+    print(value) #output: 1,2,3,4
+# In this example the output only prints 1-4. You will need to the range up to 6 to include 5
+for value in range(1,6):
+    print(value) #output: 1,2,3,4,5
+
+# Adding values to an empty list
+# You can add values to a list using the append method in a for loop that uses the range function.
+values = []
+for value in range(1,6):
+    values.append(value)
+print(values) #output: [1,2,3,4,5]
+
+# Common mistake:
+values = []
+for value in range(1,6):
+    values.append(value)
+    print(values) #output:
+# [1]
+# [1, 2]
+# [1, 2, 3]
+# [1, 2, 3, 4]
+# [1, 2, 3, 4, 5]
+# The loop will push each number into the empty list but, print the current list for each loop because print(values)
+# is include in the loop. If you want just one set of numbers pushed into the list print(values) needs to go outside the loop.
+values = []
+for value in range(1,6):
+    values.append(value)
+print(values) #output: [1,2,3,4,5]
